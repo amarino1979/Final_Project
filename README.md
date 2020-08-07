@@ -18,4 +18,6 @@ MVP in Trello and create mockup data:
  - deployment on Heroku
 
  Wire Frames
- -  ![Alt Home page](https://github.com/amarino1979/Final_Project/blob/imgs/Market_Updates_1.jpg?raw=true)
+
+![Search Page](https://user-images.githubusercontent.com/57571847/89690029-981da480-d8d3-11ea-9535-323a73d71921.jpg)
+![Index](https://user-images.githubusercontent.com/57571847/89690040-9e138580-d8d3-11ea-92ef-74781398a39f.jpg)
