@@ -1,16 +1,26 @@
 # Final_Project: MarketUpdates
 
-High level ideas:
- - User can pull from Yahoo Finance API by APIdojo.net it will have a search function for market news and stocks.
+## High level ideas:
+ - User can pull from Alpha Vantage API. They offer a variety of endpoints to search from and pull data from stocks and mutual funds.
 
-##User story & user flows:
+## User story & user flows:
  - user will register/Login
  - Navbar will display functions
  
-##Technologies Implemented
-
-
-##MVP in Trello and create mockup data:
+## Technologies Implemented
+ - Front End
+    - REACT
+    - CSS/GRID/HTML
+ - Back End
+    - NODE.js
+    - Express
+    - MongoDB
+    - Mongoose
+ - API/Testers
+    - https://www.alphavantage.co/#page-top
+    - Postman
+    
+## MVP in Trello and create mockup data:
  - MERN stack application
  - Wireframe added to README.md
  - Backend:  RESTful API that supports CRUD operations with MongoDB and Mongoose.  
@@ -21,10 +31,15 @@ High level ideas:
  - deployment on Heroku
 
 
-##Wire Frames
-Home Page
+## Wire Frames
+These are some of the ideas that I am began with to help me visualize the final project.
+#### Home Page
 ![Home Page](https://user-images.githubusercontent.com/57571847/89690276-1d08be00-d8d4-11ea-8739-39cf6c85a5b5.jpg)
-Search Page
+
+#### Search Page
 ![Search Page](https://user-images.githubusercontent.com/57571847/89690029-981da480-d8d3-11ea-9535-323a73d71921.jpg)
-Index Page
+
+#### Index Page
 ![Index](https://user-images.githubusercontent.com/57571847/89690040-9e138580-d8d3-11ea-92ef-74781398a39f.jpg)
+
+## Updates and stretch goals
