@@ -19,6 +19,8 @@
  - API/Testers
     - https://www.alphavantage.co/#page-top
     - Postman
+ - Deployment
+    - Heroku
     
 ## MVP in Trello and create mockup data:
  - MERN stack application
