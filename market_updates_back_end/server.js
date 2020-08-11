@@ -9,7 +9,8 @@ const PORT = 3000
 mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'))
 mongoose.connection.on('disconnected', () => console.log('mongo disconnected'))
 
-mongoose.connect('mongodb://localhost:27017/markets', { useNewURLParser: true })
+mongoose.connect('mongodb://localhost:27017/markets', { useNewUrlParser: true,
+useUnifiedTopology: true })
 mongoose.connection.once('open', () => {
     console.log('connected ot mongoose')
 })
