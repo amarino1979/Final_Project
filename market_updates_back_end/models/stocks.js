@@ -13,7 +13,6 @@ const stocksSchema = mongoose.Schema({
     previous_close: {type: Currency},
     change: {type: Number, default: 0},
     change_percent: {type: Number, default: 0},
-
 })
 
 module.exports = mongoose.model('Stocks', stocksSchema)

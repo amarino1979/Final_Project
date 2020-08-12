@@ -45,5 +45,4 @@ markets.put('/:id', (req, res) => {
     })
 })
 
-
 module.exports = markets

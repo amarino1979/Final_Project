@@ -1,9 +1,11 @@
 ////////// Dependencies /////////////
 const express = require('express')
 const mongoose = require('mongoose')
+//const fetch = require(node-fetch)
 const app = express()
 const PORT = 3000
 
+//have to create a fetch for the api call
 
 ////////// Error / Disconnection /////////////
 mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'))
