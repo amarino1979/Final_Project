@@ -29,7 +29,7 @@
  - Maybe a User and post model. So I will add user Auth again as a stretch goal.
  - Implement front end logic and UI
  - Connect frontend and backend using AJAX HTTP requests.
- - New technologies: going to use Grid for layout, Skeleton for color schemes, and would like to implement google maps as a stretch goal.
+ - New technologies: going to use Grid for layout, Skeleton for color schemes.
  - deployment on Heroku
 
 
