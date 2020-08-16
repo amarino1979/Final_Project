@@ -2,8 +2,9 @@ const express = require('express')
 const markets = express.Router()
 const Stocks = require('../models/stocks.js')
 
-markets.get('/', (req, res) => {
-    res.send('market update!')
+markets.get('/market', (req, res) => {
+    console.log(process.env.REACT_APP_MARKET_FRONT_END_API_KEY)
+    res.send(process.env.REACT_APP_MARKET_FRONT_END_API_KEY)
 })
 
 // Create Route
