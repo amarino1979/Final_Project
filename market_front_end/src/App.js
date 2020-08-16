@@ -13,8 +13,6 @@ export default class App extends Component {
       searchURL: ''
     }
   }
-  // https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=demo
-
 
   handleChange = (event) => {
     console.log(event.target)
