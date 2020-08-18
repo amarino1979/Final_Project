@@ -26,7 +26,7 @@ mongoose.connection.once('open', () => {
 ////////// Middleware //////////////
 app.use(express.json())
 
-const allowedURLs = ['http://localhost:3000', 'https://market-updates-front.herokuapp.com/'];
+const allowedURLs = ['http://localhost:3000', 'https://market-updates-front.herokuapp.com'];
 
 const corsOptions = {
   origin: (origin, callback) => {
