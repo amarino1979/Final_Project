@@ -25,7 +25,20 @@ mongoose.connection.once('open', () => {
 
 ////////// Middleware //////////////
 app.use(express.json())
-app.use(cors())
+
+const allowedURLs = ['http://localhost:5000', 'https://market-updates-front.herokuapp.com'];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (allowedURLs.indexOf(origin) >= 0) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
 ////////// Controllers //////////////
 const marketsController = require('./controllers/market_routes.js')
 app.use('/markets', marketsController)
