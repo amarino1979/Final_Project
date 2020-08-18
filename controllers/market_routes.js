@@ -3,7 +3,7 @@ const markets = express.Router()
 const Stocks = require('../models/stocks.js')
 
 markets.get('/market', (req, res) => {
-    console.log(process.env.REACT_APP_MARKET_FRONT_END_API_KEY)
+    console.log('ENV:', process.env)
     res.send(process.env.REACT_APP_MARKET_FRONT_END_API_KEY)
 })
 
