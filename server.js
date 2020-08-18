@@ -30,6 +30,7 @@ const allowedURLs = ['http://localhost:3000', 'https://market-updates-front.hero
 
 const corsOptions = {
   origin: (origin, callback) => {
+      console.log(origin)
     if (allowedURLs.indexOf(origin) >= 0) {
       callback(null, true);
     } else {
