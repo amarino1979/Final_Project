@@ -7,7 +7,6 @@ require('dotenv').config()
 const app = express()
 const PORT = 5000
 
-//have to create a fetch for the api call
 
 
 ////////// Error / Disconnection /////////////
