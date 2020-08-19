@@ -1,5 +1,8 @@
 # Final_Project: MarketUpdates
 
+https://market-updates-front.herokuapp.com/
+https://market-updates-api.herokuapp.com/
+
 ## High level ideas:
  - User can pull from Alpha Vantage API. They offer a variety of endpoints to search from and pull data from stocks and mutual funds.
 
@@ -26,7 +29,6 @@
  - MERN stack application
  - Wireframe added to README.md
  - Backend:  RESTful API that supports CRUD operations with MongoDB and Mongoose.  
- - Maybe a User and post model. So I will add user Auth again as a stretch goal.
  - Implement front end logic and UI
  - Connect frontend and backend using AJAX HTTP requests.
  - New technologies: going to use Grid for layout, Skeleton for color schemes.
@@ -45,3 +47,7 @@ These are some of the ideas that I am began with to help me visualize the final 
 ![Index](https://user-images.githubusercontent.com/57571847/89690040-9e138580-d8d3-11ea-92ef-74781398a39f.jpg)
 
 ## Updates and stretch goals
+- Add user and post model. So I will add user Auth again as a stretch goal.
+- Add proper error handling for the api calls since they are limited.
+- Investigate more robust external API.
+- Finish adding components: footer for homepage, carousel with market news.
