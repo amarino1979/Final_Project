@@ -1,10 +1,18 @@
 ////////// Dependencies /////////////
 const express = require('express')
 const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 const cors = require('cors')
 require('dotenv').config()
 //const fetch = require(node-fetch)
 const app = express()
+
+////////// Middleware //////////////
+// app.use(express.json())rs
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 const PORT = process.env.PORT || 5000
 
 
@@ -23,14 +31,12 @@ mongoose.connection.once('open', () => {
     console.log('connected to mongoose')
 })
 
-////////// Middleware //////////////
-app.use(express.json())
 
 const allowedURLs = ['http://localhost:3000', 'https://market-updates-front.herokuapp.com'];
 
 const corsOptions = {
   origin: (origin, callback) => {
-      console.log(origin)
+    console.log(origin)
     if (!origin || allowedURLs.indexOf(origin) >= 0) {
       callback(null, true);
     } else {

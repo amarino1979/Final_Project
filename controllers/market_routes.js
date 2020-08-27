@@ -4,11 +4,16 @@ const Stocks = require('../models/stocks.js')
 
 markets.get('/market', (req, res) => {
     console.log('ENV:', process.env)
-    res.send(process.env.REACT_APP_MARKET_FRONT_END_API_KEY)
+    const api_keys = {
+        firstKey: process.env.REACT_APP_MARKET_FRONT_END_API_KEY,
+        secondKey: process.env.REACT_APP_SECOND_API_KEY
+    }
+    res.send(api_keys)
 })
 
 // Create Route
-markets.post('/', async (req, res) => {
+markets.post('/newStock', async (req, res) => {
+    // console.log(req)
     Stocks.create(req.body, (error, createdStock) => {
         if (error) {
             res.status(400).json({ error: error.message })
@@ -17,7 +22,7 @@ markets.post('/', async (req, res) => {
     })
 })
 // Index Route
-markets.get('/', (req, res) => {
+markets.get('/stocks', (req, res) => {
     Stocks.find({}, (err, foundStocks) => {
         if (err) {
             res.status(400).json({ error: err.message })
