@@ -1,6 +1,7 @@
 # Final_Project: MarketUpdates
 
-https://market-updates-front.herokuapp.com/
+https://market-updates-front.herokuapp.com/home
+
 https://market-updates-api.herokuapp.com/
 
 ## High level ideas:
@@ -13,7 +14,7 @@ https://market-updates-api.herokuapp.com/
 ## Technologies Implemented
  - Front End
     - REACT
-    - CSS/GRID/HTML
+    - HTML/CSS/GRID/Bootstrap/Skeleton
  - Back End
     - NODE.js
     - Express
@@ -31,7 +32,8 @@ https://market-updates-api.herokuapp.com/
  - Backend:  RESTful API that supports CRUD operations with MongoDB and Mongoose.  
  - Implement front end logic and UI
  - Connect frontend and backend using AJAX HTTP requests.
- - New technologies: going to use Grid for layout, Skeleton for color schemes.
+ - Bootstrap for jumbotron on home page, navbar.
+ - New technologies: going to use Grid for layout, Skeleton for buttons.
  - deployment on Heroku
 
 
@@ -50,4 +52,3 @@ These are some of the ideas that I am began with to help me visualize the final 
 - Add user and post model. So I will add user Auth again as a stretch goal.
 - Add proper error handling for the api calls since they are limited.
 - Investigate more robust external API.
-- Finish adding components: footer for homepage, carousel with market news.
